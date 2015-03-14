@@ -1,0 +1,13 @@
+this is before outlet
+<ul id="client-list">
+    {{#each}}
+        <li>
+            <input type="checkbox" class="toggle">
+            <label>{{name}}</label><button class="destroy"></button>
+            
+        </li>
+    {{/each}}
+    {{input type="text" id="new-client" placeholder="Please entee client name" 
+    value=newName action="createClient"}}
+</ul>
+this is after

@@ -6,6 +6,17 @@ module.exports = function(environment) {
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
+    //to remove warning, as discussed Here
+    //http://stackoverflow.com/questions/26192316/violating-content-security-policy-directive-after-ember-cli-0-0-47-upgrade
+    contentSecurityPolicy: {
+      'default-src': "'none'",
+      'script-src': "'self' 'unsafe-inline' 'unsafe-eval' use.typekit.net connect.facebook.net maps.googleapis.com maps.gstatic.com",
+      'font-src': "'self' data: use.typekit.net",
+      'connect-src': "'self' 'http://localhost:1337' 'http://0.0.0.0' 'http://localhost:1337/clients' 'ws://localhost:35729' 'ws://0.0.0.0:35729'",
+      'img-src': "'self' www.facebook.com p.typekit.net",
+      'style-src': "'self' 'unsafe-inline' use.typekit.net",
+      'frame-src': "s-static.ak.facebook.com static.ak.facebook.com www.facebook.com"
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
