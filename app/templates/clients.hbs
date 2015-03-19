@@ -1,13 +1,12 @@
-this is before outlet
 <ul id="client-list">
+    <h6>Clients Name:</h6>
+      {{input type="text" id="new-client" placeholder="Please enter client name"
+      value=newName action="createClient"}}
     {{#each}}
-        <li>
-            <input type="checkbox" class="toggle">
-            <label>{{name}}</label><button class="destroy"></button>
-            
-        </li>
+      <li>
+          <input type="checkbox" class="toggle">
+          <label>{{name}}</label><button class="destroy"></button>
+
+      </li>
     {{/each}}
-    {{input type="text" id="new-client" placeholder="Please entee client name" 
-    value=newName action="createClient"}}
 </ul>
-this is after
