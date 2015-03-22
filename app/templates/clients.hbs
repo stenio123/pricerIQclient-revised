@@ -5,8 +5,8 @@
     {{#each}}
       <li>
           <input type="checkbox" class="toggle">
-          <label>{{name}}</label><button class="destroy"></button>
-
+          <label>{{name}}</label>
+          <button {{action "destroyRecord" this}} class="destroy"></button>
       </li>
     {{/each}}
 </ul>

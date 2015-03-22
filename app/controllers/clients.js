@@ -9,12 +9,18 @@ export default Ember.ArrayController.extend({
                 avgMarkup: 2,
                 quotes: 1
             });
- 
+
             // Clear the "New client" text field
             this.set('newName', '');
- 
+
             // Save the new model
             client.save();
+        },
+
+        destroyRecord: function(model) {
+
+            model.destroyRecord();
+
         }
     }
 });
