@@ -70,15 +70,15 @@
                             </div>
                             <!-- /input-group -->
                      <!--   </li> -->
-                        <li>
-                            <a href="/items"><i class="fa fa-dashboard fa-fw"></i> Items</a>
-                        </li>
-                        <li>
-                            <a href="/clients"><i class="fa fa-bar-chart-o fa-fw"></i> Clients<span class="fa arrow"></span></a>
-                        </li>
-                        <li>
-                            <a href="/quotes"><i class="fa fa-table fa-fw"></i> Quotes</a>
-                        </li>
+                        {{#link-to "items" tagName="li" class="side-nav-tab"}}
+                            <i class="fa fa-dashboard fa-fw"></i> Items<span></span>
+                        {{/link-to}}
+                         {{#link-to "clients" tagName="li" class="side-nav-tab"}}
+                            <i class="fa fa-bar-chart-o fa-fw"></i> Clients<span></span>
+                        {{/link-to}}
+                        {{#link-to "quotes" tagName="li" class="side-nav-tab"}}
+                            <i class="fa fa-table fa-fw"></i> Qoutes<span></span>
+                        {{/link-to}}
                     </ul>
                 </div>
                 <!-- /.sidebar-collapse -->

@@ -23,3 +23,17 @@
     {{content-for 'body-footer'}}
   </body>
 </html>
+
+<script>
+$(document).ready(function(){
+    $('.side-nav-tab').on('click', function(){
+      var arrow = $(this).find('span').attr('class');
+
+      if ((arrow == undefined) || (arrow == '')) {
+        $('.side-nav-tab').find('span').not(this).removeClass('fa arrow');
+        $(this).find('span').addClass('fa arrow');
+      }
+
+    })
+})
+</script>

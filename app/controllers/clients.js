@@ -21,6 +21,6 @@ export default Ember.ArrayController.extend({
 
             model.destroyRecord();
 
-        }
+        },
     }
 });
