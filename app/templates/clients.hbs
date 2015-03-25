@@ -2,11 +2,13 @@
     <h6>Clients Name:</h6>
       {{input type="text" id="new-client" placeholder="Please enter client name"
       value=newName action="createClient"}}
-    {{#each}}
       <li>
+    {{#each}}
+
           <input type="checkbox" class="toggle">
           <label>{{name}}</label>
           <button {{action "destroyRecord" this}} class="destroy"></button>
-      </li>
+    
     {{/each}}
+    </li>
 </ul>

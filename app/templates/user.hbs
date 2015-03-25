@@ -1,0 +1,17 @@
+<container id="sign-up-form" class="form-signin">
+  <h2 class="form-signin-heading">Create a user</h2>
+
+
+
+  {{input class="form-control" placeholder="your full name" value="name"}}
+  {{input class="form-control" placeholder="your company name" value="company"}}
+  {{input class="form-control" placeholder="your email address" value="email"}}
+  {{input type="password" class="form-control" placeholder="password" value="password"}}
+  {{input type="password" class="form-control" placeholder="password confirmation" value="confirmation"}}
+ 
+
+  
+  <button {{action "createUser" this}} class="btn btn-lg btn-primary btn-block" >Create Account</button>
+
+
+</container>
